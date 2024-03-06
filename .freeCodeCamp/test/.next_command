@@ -60,3 +60,5 @@ code rebuildDatabase.sh
 code dumpDatabase.sh
 ./dumpDatabase.sh
 touch student_info.sh
+chmod +x student
+chmod +x student_info.sh
