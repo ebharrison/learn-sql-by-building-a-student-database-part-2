@@ -62,3 +62,5 @@ code dumpDatabase.sh
 touch student_info.sh
 chmod +x student
 chmod +x student_info.sh
+code student
+code student_info.sh
