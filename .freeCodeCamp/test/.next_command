@@ -59,3 +59,4 @@ rm insert_data.sh
 code rebuildDatabase.sh
 code dumpDatabase.sh
 ./dumpDatabase.sh
+touch student_info.sh
