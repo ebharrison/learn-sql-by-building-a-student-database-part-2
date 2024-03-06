@@ -49,3 +49,13 @@ trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 ls --color=auto
 psql -U postgres < students.sql
+git remote -v
+git remote set-url origin https://github.com/ebharrison/learn-sql-by-building-a-student-database-part-2.git
+git clone https://github.com/ebharrison/learn-sql-by-building-a-student-database-part-1.git
+cp learn-sql-by-building-a-student-database-part-1/dumpDatabase.sh learn-sql-by-building-a-student-database-part-1/insert_data.sh learn-sql-by-building-a-student-database-part-1/rebuildDatabase.sh .
+rm -rf learn-sql-by-building-a-student-database-part-1/
+ls --color=auto
+rm insert_data.sh
+code rebuildDatabase.sh
+code dumpDatabase.sh
+./dumpDatabase.sh
