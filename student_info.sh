@@ -27,3 +27,4 @@ echo "$($PSQL "SELECT course FROM courses where course like '_e%' or course like
 
 echo -e "\nAverage GPA of all students rounded to two decimal places:"
 echo "$($PSQL "select round(avg(gpa),2) from students;")"
+
