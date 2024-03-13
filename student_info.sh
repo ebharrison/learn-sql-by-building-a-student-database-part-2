@@ -25,3 +25,5 @@ echo -e "\nCourse name of the first five courses, in reverse alphabetical order,
 echo "$($PSQL "SELECT course FROM courses where course like '_e%' or course like '%s' ORDER BY course DESC LIMIT 5")"
 
 
+echo -e "\nAverage GPA of all students rounded to two decimal places:"
+echo "$($PSQL "select round(avg(gpa),2) from students;")"
