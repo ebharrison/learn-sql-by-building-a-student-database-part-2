@@ -13,3 +13,4 @@ echo -e "\nAll course names whose first letter is before 'D' in the alphabet:"
 
 # 1960
 echo -e "\nMajor ID, total number of students in a column named 'number_of_students', and average GPA rounded to two decimal places in a column name 'average_gpa', for each major ID in the students table having a student count greater than 1:"
+echo "$($PSQL "SELECT first_name, last_name, gpa FROM students WHERE gpa = 4.0")"
