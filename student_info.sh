@@ -15,4 +15,4 @@ echo -e "\nAll course names whose first letter is before 'D' in the alphabet:"
 echo -e "\nMajor ID, total number of students in a column named 'number_of_students', and average GPA rounded to two decimal places in a column name 'average_gpa', for each major ID in the students table having a student count greater than 1:"
 echo "$($PSQL "SELECT major_id, count(*) as number_of_students, ROUND(AVG(gpa),2) as average_gpa from students group by major_id having count(*) > 1")"
 
-echo -e "\nList of majors, in alphabetical order, that either no student is taking or has a student whose first name contains a case insensitive 'ma':"
+echo -e "\nList of majors, in alphabetical order, that either no student is taking or has a student whose first name contains a case insensitive 'ma':
